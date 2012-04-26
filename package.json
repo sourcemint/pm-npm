@@ -4,6 +4,7 @@
     "pm": "npm",
     "dependencies": {
         "sourcemint-pm-sm": "0.1.x",
+        "sourcemint-pm-git": "0.1.x",
         "semver": "1.x"
     }
 }
