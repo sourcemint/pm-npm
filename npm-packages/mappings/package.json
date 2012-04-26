@@ -1,0 +1,16 @@
+{
+    "name": "mappings",
+    "version": "0.1.1",
+    "engines": {
+        "node": ">= 0.6.15"
+    },
+    "main": "./index.js",
+    "dependencies": {
+        "sourcemint-util-js": "0.1.x",
+        "sourcemint-pm-sm": "0.1.x"
+    },
+    "scripts": {
+        "postprograminstall": "node ./scripts/post-program-install.js",
+        "postprogramupdate": "node ./scripts/post-program-update.js"
+    }
+}

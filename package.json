@@ -1,0 +1,9 @@
+{
+    "name": "sourcemint-pm-npm",
+    "version": "0.1.0",
+    "pm": "npm",
+    "dependencies": {
+        "sourcemint-pm-sm": "0.1.x",
+        "semver": "1.x"
+    }
+}
