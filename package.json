@@ -1,6 +1,6 @@
 {
     "name": "sourcemint-pm-npm",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "pm": "npm",
     "dependencies": {
         "sourcemint-pm-sm": "0.1.x",
