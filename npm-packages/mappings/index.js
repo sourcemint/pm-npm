@@ -28,6 +28,10 @@ function walkPackagesForName(packagePath, name) {
     if (PATH.existsSync(path)) {
         return path;
     }
+    path = PATH.resolve(packagePath, "node_modules", name);
+    if (PATH.existsSync(path)) {
+        return path;
+    }
     var nextPath = PATH.resolve(packagePath, "..");
     if (nextPath === packagePath) {
         throw new Error("No mapped package found for alias '" + name + "'");
