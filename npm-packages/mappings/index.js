@@ -11,12 +11,15 @@ var Mappings = function(packagePath) {
     this.packagePath = packagePath;
 }
 
-Mappings.prototype.resolve = function(uri) {
+Mappings.prototype.resolve = function(uri, silent) {
     try {
         var uriParts = uri.split("/");
         var path = walkPackagesForName(this.packagePath, uriParts.shift());
         return PATH.resolve(path, uriParts.join("/"));
     } catch(err) {
+        if (silent === true) {
+            return false;
+        }
         err.message = "for package[" + this.packagePath + "]: " + err.message;
         throw err;
     }
